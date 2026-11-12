@@ -17,9 +17,9 @@
   "engines": {
     "node": ">=22.18.0"
   },
-  "scripts": {
+ "scripts": {
     "dev": "tsx scripts/with-secrets.ts --env develop -- cf dev --mode develop",
-    "build": "cf build",
+    "build": "echo 'Wrangler will build this'",
     "cf:login": "cf auth login",
     "secrets": "tsx scripts/create-config.ts",
     "deploy": "wrangler deploy --x-autoconfig=false",
