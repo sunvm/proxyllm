@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
     throw new Error(`Unknown deployment mode: ${mode}`);
   return {
     worker: {
-      name: mode === "develop" ? "llm-proxy-develop" : "llm-proxy",
+      name: mode === "develop" ? "llm-proxy-develop" : "proxyllm",
       compatibilityDate: "2026-07-27",
       compatibilityFlags: ["nodejs_compat", "enable_request_signal"],
       entrypoint: "src/index.ts",
