@@ -18,9 +18,6 @@ export default defineConfig(({ mode }) => {
       placement: {
         mode: "smart",
       },
-      limits: {
-        cpuMs: 1000,
-      },
       observability: {
         enabled: true,
         logs: {
